@@ -1,5 +1,5 @@
 #include "main.h"
-#define MAXSTRING 10
+#define MAXSTRING 8
 /**
  * main - Entry point
  * Return: 0 Always (Success)
