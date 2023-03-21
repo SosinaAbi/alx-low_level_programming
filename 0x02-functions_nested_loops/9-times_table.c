@@ -34,6 +34,7 @@ void times_table(void)
 				{
 					_putchar(' ');
 					_putchar((y * x) + '0');
+				}
 				else
 				{
 					_putchar(((x * y) / 10) + '0');
