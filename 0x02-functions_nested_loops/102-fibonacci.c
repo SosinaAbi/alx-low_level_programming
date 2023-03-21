@@ -10,8 +10,8 @@ int main(void)
 	long int fib = 0;
 	int n;
 
-	printf("%ld, %ld, ", f1, f2);
-	for (n = 3; n <= 50; n++)
+	printf("%ld, ", f2);
+	for (n = 2; n <= 50; n++)
 	{
 		fib = f2 + f1;
 		printf("%ld, ", fib);
