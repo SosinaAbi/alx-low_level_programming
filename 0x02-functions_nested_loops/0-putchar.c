@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 #define MAXSTRING 10
 /**
  * main - Entry point
@@ -13,12 +13,12 @@ int main(void)
 	{
 		if (ch[i] == '\n')
 		{
-			putchar('\n');
+			_putchar('\n');
 			break;
 		}
 		else
-			putchar(ch[i]);
+			_putchar(ch[i]);
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
+	return (0);			
 }
