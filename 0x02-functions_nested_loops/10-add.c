@@ -2,11 +2,11 @@
 /**
  * add - adds two integers
  * Return: returns added result
- * @int: integer parameters
+ * @x: integer parameters
+ * @y: integer parameter
  */
-int add(int, int)
+int add(int x, int y)
 {
-	int x, y;
 	int sum = x + y;
 	int d = 10;
 
