@@ -13,12 +13,11 @@ int main(void)
 	{
 		if (ch[i] == '\n')
 		{
-			_putchar('\n');
 			break;
 		}
 		else
 			_putchar(ch[i]);
 	}
 	_putchar('\n');
-	return (0);			
+	return (0);
 }
