@@ -14,9 +14,10 @@ int main(void)
 	for (n = 2; n <= 50; n++)
 	{
 		fib = f2 + f1;
+		printf("%ld", fib);
 		if (n < 50)
 		{
-			printf("%ld, ", fib);
+			printf(", ");
 		}
 
 		f1 = f2;
