@@ -16,6 +16,7 @@ void times_table(void)
 				if ((x * y) < 10)
 				{
 					_putchar((x * y) + '0');
+					_putchar(' ');
 				}
 				else
 				{
@@ -27,7 +28,14 @@ void times_table(void)
 
 			}
 			else
-				_putchar((y * x) + '0');
+			{
+				if ((x * y) < 10)
+					_putchar((y * x) + '0');
+				else
+				{
+					_putchar(((x * y) / 10) + '0');
+					_putchar(((x * y) % 10) + '0');
+				}
 		}
 		_putchar('\n');
 	}
