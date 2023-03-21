@@ -10,11 +10,11 @@ int main(void)
 	long int fib = 0;
 	int n;
 
-	printf("%d, %d, ", f1, f2);
+	printf("%ld, %ld, ", f1, f2);
 	for (n = 3; n <= 50; n++)
 	{
 		fib = f2 + f1;
-		printf("%d, ", fib);
+		printf("%ld, ", fib);
 
 		f1 = f2;
 		f2 = fib;
