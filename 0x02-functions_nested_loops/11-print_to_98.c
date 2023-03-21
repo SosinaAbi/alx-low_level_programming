@@ -27,4 +27,5 @@ void print_to_98(int n)
 		if (x == 98)
 			printf("%d", x);
 	}
+	_putchar('\n');
 }
