@@ -15,9 +15,14 @@ void more_numbers(void)
 	{
 		for (i = 0; i < MAXSTRING; i++)
 		{
-			_putchar(ch[i]);
+			if (ch[i] == '\0')
+			{
+				_putchar('\n');
+				break;
+			}
+			else
+				_putchar(ch[i]);
 		}
-		_putchar('\n');
 	}
 	_putchar('\n');
 }
