@@ -7,10 +7,9 @@
 
 int main(void)
 {
-	long x, y;
+	long y;
 
-	x = 612852475143;
-	y = x;
+	y = 612852475143;
 
 	while ((y % 2 == 0) || (y % 3 == 0))
 	{
