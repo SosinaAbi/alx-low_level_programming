@@ -8,21 +8,18 @@
 
 void more_numbers(void)
 {
-	int x, i;
-	char ch[] = "01234567891011121314";
+	int x, y;
 
 	for (x = 0; x < 10; x++)
 	{
-		for (i = 0; i < MAXSTRING; i++)
+		for (y = 0; y <= 14; y++)
 		{
-			if (ch[i] == '\0')
+			if (y >= 10)
 			{
-				_putchar('\n');
-				break;
+				_putchar((y / 10) + '0');
 			}
-			else
-				_putchar(ch[i]);
+			_putchar((y % 10) + '0');
 		}
-	}
 	_putchar('\n');
+	}
 }
