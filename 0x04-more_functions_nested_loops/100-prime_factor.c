@@ -8,7 +8,6 @@
 int main(void)
 {
 	long x, y;
-	int i;
 
 	x = 612852475143;
 	y = x;
