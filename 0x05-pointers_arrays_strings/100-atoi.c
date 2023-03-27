@@ -8,36 +8,29 @@
 
 int _atoi(char *s)
 {
-	int pos, neg;
-	int count, i, j;
-	char num;
+	int count;
+	unsigned int num;
+	int min = 1;
+	int isi = 0;
 
-	pos = 0;
-	neg = 0;
-	count = 0;
-	i = 0;
-	j = 0;
-	while (s[i++])
-		count++;
-	for (i = 0; i < count; i++)
+	while (s[count])
 	{
-		if (s[i] == '+')
-			pos++;
-		else if (s[i] == '-')
-			neg++;
-	}
-	if (neg > pos)
-	{
-		num[j] = '-';
-		j++;
-	}
-	for (i = 0; i < count; i++)
-	{
-		if (s[i] >= '0' && s[i] <= '9')
+		if (s[count] == 45)
 		{
-			num[j] = s[i];
-			j++;
+			min *= -1;
 		}
+		while (s[count] >= 48 && s[count] <= 57)
+		{
+			isi = 1;
+			num = (num * 10) + (s[count] - '0');
+			count++;
+		}
+		if (isi == 1)
+		{
+			break;
+		}
+		count++;
 	}
+	num *= min;
 	return (num);
 }
