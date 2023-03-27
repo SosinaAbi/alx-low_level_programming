@@ -22,12 +22,10 @@ void rev_string(char *s)
 	j = count - 1;
 	i = 0;
 
-	while (j >= -1)
+	while (j >= 0)
 	{
-		s[i] = s[j];
+		s[j] = s[i];
 		i++;
 		j--;
 	}
 }
-
-
