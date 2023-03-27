@@ -19,10 +19,13 @@ void puts2(char *str)
 		i++;
 	}
 
-	for (i = 0; i <= (count - 1) / 2; i++)
+	if (count > 0)
 	{
-		_putchar(str[2 * i]);
-	}
+		for (i = 0; i <= (count - 1) / 2; i++)
+		{
+			_putchar(str[2 * i]);
+		}
 
+	}
 	_putchar('\n');
 }
