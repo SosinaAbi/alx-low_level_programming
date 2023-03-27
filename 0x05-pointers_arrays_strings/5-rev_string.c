@@ -10,7 +10,6 @@ void rev_string(char *s)
 	int count, i, j;
 	char h[];
 
-	h[] = s[];
 	count = 0;
 	i = 0;
 	j = 0;
@@ -21,6 +20,7 @@ void rev_string(char *s)
 		i++;
 	}
 
+	h[count] = s[count];
 	j = count - 1;
 	i = 0;
 
