@@ -10,7 +10,7 @@ int _atoi(char *s)
 {
 	int pos, neg;
 	int count, i, j;
-	int num;
+	char num;
 
 	pos = 0;
 	neg = 0;
