@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * memset - Saves b in s arrays for n bytes.
+ * _memset - Saves b in s arrays for n bytes.
  * @s: Destination array.
  * @b: Data to be saved in s.
  * @n: Number of bytes for array s.
