@@ -16,7 +16,7 @@ char *_strchr(char *s, char c)
 	while (s[i++])
 		n++;
 
-	for (j = 0; j < n; j++)
+	for (j = 0; j <= n; j++)
 	{
 		if (c == s[j])
 			return (s + j);
