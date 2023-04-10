@@ -31,10 +31,11 @@ char *argstostr(int ac, char **av)
 	{
 		while (av[i][j])
 		{
+			str[x] = av[i][j];
 			x++;
 			j++;
 		}
-		str[x] = '\0';
+		str[x] = '\n';
 		j = 0;
 		x++;
 		i++;
