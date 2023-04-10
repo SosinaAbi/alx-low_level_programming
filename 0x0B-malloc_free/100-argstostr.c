@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * argstostr - Convert arguments into string.
@@ -24,7 +25,7 @@ char *argstostr(int ac, char **av)
 		j = 0;
 		i++;
 	}
-	str = malloc((s * sizeof(char) + ac + 1));
+	str = malloc((s * sizeof(char)) + ac + 1);
 	i = 0;
 	while (av[i])
 	{
