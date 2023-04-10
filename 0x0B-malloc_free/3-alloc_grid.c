@@ -20,7 +20,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	if (twoD == NULL)
 	{
-		free(towD);
+		free(twoD);
 		return (NULL);
 	}
 
