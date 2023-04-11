@@ -13,31 +13,33 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, sum = 0;
+	int i;
+	unsigned int j, sum = 0;
 	char *str;
 
-	for (i = 1; i < argc; i++)
+	if (argc > 1)
 	{
-		str = argv[i];
-		for (j = 0; j < strlen(str); j++)
+		for (i = 1; i < argc; i++)
 		{
-			if (str[j] > 57 || str[j] < 48)
+			str = argv[i];
+			for (j = 0; j < strlen(str); j++)
 			{
-				printf("Error\n");
-				return (1);
-			}
-			if (argv[i] == "")
-			{
-				printf("0\n");
-				break;
-			}
+				if (str[j] > 57 || str[j] < 48)
+				{
+					printf("Error\n");
+					return (1);
+				}
 
 			sum += atoi(str);
 			str++;
+			}
 		}
+		printf("%d\n", sum);
 	}
-
-	printf("%d\n", sum);
+	else
+	{
+		printf("0\n");
+	}
 
 	return (0);
 }
