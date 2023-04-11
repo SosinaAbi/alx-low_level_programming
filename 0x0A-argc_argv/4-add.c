@@ -22,17 +22,18 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			str = argv[i];
+
 			for (j = 0; j < strlen(str); j++)
 			{
-				if (str[j] > 57 || str[j] < 48)
+				if (str[j] < 48 || str[j] > 57)
 				{
 					printf("Error\n");
 					return (1);
 				}
-
-				sum += atoi(str);
-				str++;
 			}
+
+			sum += atoi(str);
+			str++;
 		}
 		printf("%d\n", sum);
 	}
