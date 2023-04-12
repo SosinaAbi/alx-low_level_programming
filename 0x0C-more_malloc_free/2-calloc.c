@@ -13,17 +13,19 @@
 
 char *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *array;
-	unsigned int i;
+	char *array;
+	unsigned int i = 0, len = 0;
 
-	array = malloc(sizeof(size) * nmemb);
-
-	if (array == NULL)
-		return (NULL);
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
+	len = nmemb * size;
+	array = malloc(len);
+
+	if (array == NULL)
+		return (NULL);
+
+	for (i = 0; i < len; i++)
 	{
 		array[i] = 0;
 	}
