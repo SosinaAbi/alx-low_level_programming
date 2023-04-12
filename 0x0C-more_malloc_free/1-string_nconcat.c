@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 
 /**
  * string_nconcat - Concatenates string
@@ -31,21 +31,22 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (s2[j])
 		j++;
 
-	if (j < n)
+	if (n >= j)
 		len = i + j;
 	else
 		len = i + n;
 
-	str = malloc(sizeof(char) * len + 1);
+	str = (char *)malloc(sizeof(char) * len + 1);
 	if (str == NULL)
 		return (NULL);
 
 	j = 0;
+
 	while (x < len)
 	{
 		if (x <= i)
 			str[x] = s1[x];
-		if (x > i)
+		if (x >= i)
 		{
 			str[x] = s2[j];
 			j++;
