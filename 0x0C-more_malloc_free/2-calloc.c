@@ -11,7 +11,7 @@
  * allocated memory of array.
  */
 
-char *_calloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *str;
 	unsigned int i = 0, len = 0;
