@@ -38,6 +38,16 @@ int _strlen(char *s)
 }
 
 /**
+ * error - Prints error message.
+ */
+
+void error(void)
+{
+	printf("Error\n");
+	exit(98);
+}
+
+/**
  * main - Prints multiplication result
  * of two digits.
  * @argc: Argument counter.
@@ -53,14 +63,10 @@ int main(int argc, char *argv[])
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
-	{
-		printf("Error\n");
-		exit(98);
-	}
+		error();
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 	len = len1 + len2 + 1;
-
 	res = malloc(sizeof(int) * len);
 	if (!res)
 		return (1);
@@ -93,4 +99,3 @@ int main(int argc, char *argv[])
 	free(res);
 	return (0);
 }
-
