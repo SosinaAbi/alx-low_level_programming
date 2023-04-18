@@ -48,8 +48,8 @@ int _strlen(char *s)
 
 int main(int argc, char *argv[])
 {
-	char *s1, s2;
-	int len1, len2, len, c, d1, d2, *res, a = 0;
+	char *s1, *s2;
+	int i, len1, len2, len, c, d1, d2, *res, a = 0;
 
 	s1 = argv[1], s2 = argv[2];
 	if (argc != 3 || !is_digit(s1) || !is_digit(s2))
@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 	{
 		d1 = s1[len1] - '0';
 		c = 0;
-		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
+		for (len2 = len2 - 1; len2 >= 0; len2--)
 		{
 			d2 = s2[len2] - '0';
 			c += res[len1 + len2 + 1] + (d1 * d2);
