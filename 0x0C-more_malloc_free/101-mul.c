@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 	{
 		d1 = s1[len1] - '0';
 		c = 0;
-		for (len2 = len2 - 1; len2 >= 0; len2--)
+		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 		{
 			d2 = s2[len2] - '0';
 			c += res[len1 + len2 + 1] + (d1 * d2);
