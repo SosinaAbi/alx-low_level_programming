@@ -49,7 +49,7 @@ int word_count(char *str)
 			i += word_size(str + i);
 		}
 	}
-	return (counts);
+	return (count);
 }
 
 /**
@@ -72,7 +72,7 @@ char **strtow(char *str)
 	words = malloc(sizeof(char *) * (count_w + 1));
 	if (words == NULL)
 		return (NULL);
-	for (w = 0; w < counts; w++)
+	for (w = 0; w < count_w; w++)
 	{
 		while (str[i] == ' ')
 			i++;
