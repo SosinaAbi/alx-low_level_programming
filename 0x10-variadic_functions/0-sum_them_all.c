@@ -14,10 +14,10 @@ int sum_them_all(const unsigned int n, ...)
 	int n_sum = 0;
 	unsigned int i;
 
+	va_list argument_pointer;
+
 	if (n == 0)
 		return (0);
-
-	va_list argument_pointer;
 
 	va_start(argument_pointer, n);
 
